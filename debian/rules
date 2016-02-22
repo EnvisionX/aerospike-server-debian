@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+%:
+	dh $@ --with systemd
+
+# Running any of these targets will break the source tree.
+override_dh_clean override_dh_auto_clean:

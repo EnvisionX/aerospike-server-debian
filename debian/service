@@ -1,0 +1,18 @@
+[Unit]
+Description=Aerospike Server
+After=network.target
+
+[Service]
+Type=simple
+User=aerospike
+UMask=0077
+LimitNOFILE=20000
+ExecStartPre=/usr/share/aerospike/asd-systemd-helper
+ExecStart=/usr/sbin/asd $ASD_OPTIONS --config-file /etc/aerospike/aerospike.conf --fgdaemon
+PIDFile=/var/run/aerospike/asd.pid
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+Alias=aerospike.service

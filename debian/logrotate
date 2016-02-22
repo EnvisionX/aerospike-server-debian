@@ -1,0 +1,11 @@
+/var/log/aerospike/aerospike.log {
+    daily
+    rotate 90
+    dateext
+    compress
+    missingok
+    notifempty
+    postrotate
+        systemctl reload aerospike || :
+    endscript
+}

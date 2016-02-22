@@ -1,0 +1,6 @@
+target/bin/asd /usr/sbin
+as/etc/aerospike.conf /etc/aerospike
+as/etc/asd-systemd-helper       /usr/share/aerospike
+modules/lua-core/src/*.lua      /usr/share/aerospike/lua
+modules/lua-core/src/ldt/*      /usr/share/aerospike/lua/ldt
+modules/lua-core/src/external/* /usr/share/aerospike/lua/external

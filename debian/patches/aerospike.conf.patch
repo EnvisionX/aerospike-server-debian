@@ -1,0 +1,26 @@
+--- a/as/etc/aerospike.conf
++++ b/as/etc/aerospike.conf
+@@ -1,8 +1,9 @@
+ # Aerospike database configuration file.
+ 
+ service {
+-	user root
+-	group root
++	user aerospike
++	group aerospike
++	work-directory /var/lib/aerospike
+ 	paxos-single-replica-limit 1 # Number of nodes where the replica count is automatically reduced to 1.
+ 	pidfile /var/run/aerospike/asd.pid
+ 	service-threads 4
+@@ -11,6 +12,11 @@ service {
+ 	proto-fd-max 15000
+ }
+ 
++mod-lua {
++	system-path /usr/share/aerospike/lua
++	user-path /var/lib/aerospike/lua
++}
++
+ logging {
+ 	# Log file must be an absolute path.
+ 	file /var/log/aerospike/aerospike.log {

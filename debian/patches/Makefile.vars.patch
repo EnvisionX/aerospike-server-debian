@@ -1,0 +1,11 @@
+--- a/make_in/Makefile.vars
++++ b/make_in/Makefile.vars
+@@ -101,7 +101,7 @@
+ TARGET_DIR  = $(DEPTH)/target
+ 
+ PLATFORM    = $(shell uname)-$(shell arch)
+-BUILD_DIR   = $(TARGET_DIR)/$(PLATFORM)
++BUILD_DIR   = $(TARGET_DIR)
+ 
+ GEN_DIR     = $(BUILD_DIR)/gen
+ INCLUDE_DIR = ../include $(GEN_DIR)

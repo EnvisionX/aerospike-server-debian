@@ -1,0 +1,5 @@
+aerospike-server (3.7.3-5) unstable; urgency=low
+
+  * Initial release for Debian Jessie.
+
+ -- Aleksey Morarash <aleksey.morarash@envisionx.co>  Sun, 21 Feb 2016 11:51:00 +0200

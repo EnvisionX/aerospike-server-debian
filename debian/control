@@ -1,0 +1,22 @@
+Source: aerospike-server
+Section: databases
+Priority: extra
+Maintainer: Aleksey Morarash <aleksey.morarash@envisionx.co>
+Build-Depends: debhelper, dh-systemd, autoconf, automake, libtool,
+ g++, openssl, libssl-dev, lua5.1, liblua5.1-dev, git
+Standards-Version: 3.9.3
+Homepage: https://github.com/aerospike/aerospike-server
+Vcs-Browser: https://github.com/aerospike/aerospike-server
+Vcs-Git: https://github.com/aerospike/aerospike-server.git
+
+Package: aerospike-server
+Architecture: any
+Depends: libc6 (>= 2.7), logrotate
+Description: Distributed datastore with elastic server properties.
+ Aerospike is a distributed, scalable NoSQL database. It is architected
+ with three key objectives:
+ * To create a high-performance, scalable platform that would meet the needs
+  of today’s web-scale applications;
+ * To provide the robustness and reliability (i.e., ACID) expected from
+  traditional databases;
+ * To provide operational efficiency (minimal manual involvement).

@@ -1,0 +1,3 @@
+aerospike.conf.patch
+Makefile.vars.patch
+asd-systemd-helper.patch

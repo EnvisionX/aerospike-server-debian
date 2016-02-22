@@ -1,0 +1,5 @@
+d /var/lib/aerospike 0750 aerospike aerospike -
+d /var/lib/aerospike/lua 0750 aerospike aerospike -
+d /var/lib/aerospike/smd 0750 aerospike aerospike -
+d /var/log/aerospike 0755 aerospike aerospike -
+d /var/run/aerospike 0755 aerospike aerospike -
