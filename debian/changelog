@@ -1,3 +1,9 @@
+aerospike-server (3.8.0) unstable; urgency=low
+
+  * rebuild with new versions of libs.
+
+ -- Oleksii Klitovchenko <oleksii.klitovchenko@envisionx.co>  Sun, 22 Mar 2020 09:58:05 +0200
+
 aerospike-server (3.7.3-5) unstable; urgency=low
 
   * Initial release for Debian Jessie.
